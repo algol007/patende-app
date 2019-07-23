@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ady Rahmansyah - Profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="App">
+        <div id="sidebar">
+            <div class="toggle-button" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="photo"><img src="./img/Foto.jpg" alt="AdyR"></div>
+            <h4 class="name">ADY RAHMANSYAH</h4>
+            <ul>
+                <li><a href="index.html">Monitoring</a></li>
+                <li><a href="on-off.html">ON / OFF</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <ul class="title">
+                <li><img src="img/patende.png" alt="logo" class="logo"/></li>
+                <li><h1 class="title-text">Patende.io</h1></li>
+            </ul>
+        </div>
+        <div class="part lamp1">
+            <hr class="line1"/>
+            <h2 class="sub-title">RELAY 1</h2>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field2=1')" class="button on">ON</a>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field2=0')" class="button off">OFF</a>
+        </div>
+        <div class="part lamp2">
+            <h2 class="sub-title">RELAY 2</h2>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field3=1')" class="button on">ON</a>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field3=0')" class="button off">OFF</a>
+        </div>
+        <div class="part lamp3">
+            <h2 class="sub-title">RELAY 3</h2>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field4=1')" class="button on">ON</a>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field4=0')" class="button off">OFF</a>
+        </div>
+        <div class="part lamp4">
+            <h2 class="sub-title">RELAY 4</h2>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field5=1')" class="button on">ON</a>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field5=0')" class="button off">OFF</a>
+        </div>
+        <div class="part lamp5">
+            <h2 class="sub-title">RELAY 5</h2>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field6=1')" class="button on">ON</a>
+            <a onclick="ajaxdor('https://api.thingspeak.com/update?api_key=KPPG9WLMPNW30FA4&field6=0')" class="button off">OFF</a>
+        </div>
+        <div id="footer-on">
+            <div class="footer">Copyright &copy ALGOL007 - Patende.io @2019</div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
