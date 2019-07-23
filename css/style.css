@@ -4,13 +4,16 @@ html, body{
     margin: 0;
     padding: 0;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
 a{
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 .App{
     text-align: center;
-    margin-bottom: 8em;
 }
 li{
     list-style: none;
@@ -21,7 +24,7 @@ h1, h2, h3{
 }
 .header{
     min-height: 5em;
-    margin: auto;
+    margin: 2em auto;
     display: table;
 }
 .button{
@@ -35,8 +38,9 @@ h1, h2, h3{
     outline: none;
 }
 .sensor{
-    color: #27ae60;
+    color:#2ecc71;
     font-size: 7em;
+    margin-top: 0.2em;
 }
 .part{
     margin-bottom: 1.5em;
@@ -60,6 +64,7 @@ h1, h2, h3{
     transition: 0.7s;
 }
 .line1{
+    margin: auto;
     width: 75%;
     margin-bottom: 1.5em;
 }
@@ -87,7 +92,82 @@ h1, h2, h3{
     height: auto;
 }
 
+
+/*=============================================================*/
+
+#sidebar{
+    top: 0;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: rgba(105, 105, 105, 1);
+    left: -250px;
+    transition: all 500ms linear;
+    z-index: 1;
+}
+#sidebar.active{
+    left: 0px;
+}
+
+#sidebar ul li{
+    list-style: none;
+    border-bottom: 2px solid #eaeaea;
+    padding-left: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+#sidebar ul li a{
+    padding: 20px 10px;
+}
+#sidebar ul li:hover{
+    background: #555555;
+}
+
+#sidebar .toggle-button{
+    position: absolute;
+    left: 280px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.toggle-button span{
+    background: #ffffff;
+    width: 30px;
+    height: 5px;
+    display: block;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+.photo{
+    background: url(./img/Foto.jpg);
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 30px;
+}
+.photo img{
+    border-radius: 50%;
+}
+.name{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
 #footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #696969;
+    margin-top: 5em;
+}
+
+#footer-on{
     width: 100%;
     position: relative;
     bottom: 0;
@@ -95,7 +175,6 @@ h1, h2, h3{
     background: #696969;
     margin-top: 5em;
 }
-
 .footer{
     font-weight: bold;
     color: #ffffff;
