@@ -10,7 +10,7 @@ xhr.onload = function() {
     if (xhr.status === 200) {
         result = xhr.responseText
         if (result != "0"){
-          alert("Changed")
+          alert("relay status changed");
         }
         else{
           ajaxdor(url)
@@ -33,4 +33,13 @@ fetch(endpoint)
   document.querySelector(".sensor").innerHTML = value1;
 })
 .catch(error => console.error(error));
+
+function myFunction() {
+  setTimeout(function(){ 
+  	window.location.reload();
+  }, 10000);
+}
+
+myFunction();
+
 

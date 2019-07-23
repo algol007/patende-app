@@ -14,6 +14,7 @@ a{
 }
 .App{
     text-align: center;
+    /* padding-bottom: 5em; */
 }
 li{
     list-style: none;
@@ -173,7 +174,7 @@ h1, h2, h3{
     bottom: 0;
     left: 0;
     background: #696969;
-    margin-top: 5em;
+    margin-top: 8em;
 }
 .footer{
     font-weight: bold;
